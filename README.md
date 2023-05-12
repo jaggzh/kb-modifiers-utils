@@ -1,18 +1,14 @@
 # For when Shortcuts/Macros need to wait for or otherwise manage keyboard modifier keys 
 
-# Notes:
-
-* kbmods-state: Outputs modifier states fine
-* gobble: Doesn't currently work properly yet
+kbmods-state: Outputs modifier states. Can wait until all modifiers released
 
 # Usage:
-
 ```
-$ gobble
-  or
-$ kbmods-state
+$ kbmods-state      # Outputs states
+$ kbmods-state -w   # Waits until no modifiers are held down
+$ kbmods-state -wv  # Waits, like ^, but keeps outputting state (a lot)
 ```
 
 # Compiling
-    1. Clone
-    2. type `make`
+1. Clone
+2. type `make`

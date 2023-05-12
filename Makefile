@@ -1,22 +1,16 @@
 LIBS=-lX11
-LIBS_GOBBLE=-lX11 -lxkbcommon -lxkbcommon-x11
+# LIBS_GOBBLE=-lX11 -lxkbcommon -lxkbcommon-x11
 
-all: gobble kbmods-state
+all: kbmods-state
 
 kbmods-state: kbmods-state.c
 	gcc -o "$@" $^ $(LIBS)
 
-gobble: gobble.c
-	gcc -o gobble gobble.c $(LIBS_GOBBLE)
-
 debug:
-	gcc -ggdb3 -o gobble gobble.c $(LIBS_GOBBLE)
+	gcc -ggdb3 -o kbmods-state kbmods-state.c $(LIBS)
 
 run_debug: debug
-	gdb ./gobble
+	gdb ./kbmods-state
 
 vi:
-	vim README.md Makefile gobble.c kbmods-state.c
-
-
-# vim: noet
+	vim README.md Makefile kbmods-state.c gobble.c
