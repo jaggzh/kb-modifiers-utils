@@ -1,8 +1,15 @@
-# gobble: Eat meta keys -- useful temporarily in macros
+# For when Shortcuts/Macros need to wait for or otherwise manage keyboard modifier keys 
+
+# Notes:
+
+* kbmods-state: Outputs modifier states fine
+* gobble: Doesn't currently work properly yet
 
 # Usage:
     ```
-    gobble
+    $ gobble
+      or
+    $ kbmods-state
     ```
 
 # Compiling
