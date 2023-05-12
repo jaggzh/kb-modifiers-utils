@@ -6,11 +6,12 @@
 * gobble: Doesn't currently work properly yet
 
 # Usage:
-    ```
-    $ gobble
-      or
-    $ kbmods-state
-    ```
+
+```bash
+$ gobble
+  or
+$ kbmods-state
+```
 
 # Compiling
     1. Clone
