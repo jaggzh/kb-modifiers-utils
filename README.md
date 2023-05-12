@@ -7,11 +7,11 @@
 
 # Usage:
 
-```bash
+`bash
 $ gobble
   or
 $ kbmods-state
-```
+`
 
 # Compiling
     1. Clone
